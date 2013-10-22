@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<language value="English">
+  
+  <MasterPage>
+    <Button>
+      <btnSearch>查找</btnSearch>
+      <btnLogin>登陆管理面板</btnLogin>
+      
+    </Button>
+    <Label>
+      <lblserphone>服务热线</lblserphone>
+     
+    </Label>
+  </MasterPage>
+
+  
+</language>

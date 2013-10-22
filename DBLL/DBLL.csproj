@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{BF3A03BE-4102-44A2-91DF-B4A432B36EC6}</ProjectGuid>
+    <ProjectGuid>{4A7F8CE9-D0B5-42D3-88A6-3D2BE6AA1425}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DAL</RootNamespace>
-    <AssemblyName>DAL</AssemblyName>
+    <RootNamespace>DBLL</RootNamespace>
+    <AssemblyName>DBLL</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,7 +31,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="sqldbhelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\sqldbhelper.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -40,7 +45,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="AlbumDBLL.cs" />
+    <Compile Include="clsAlbum.cs" />
+    <Compile Include="clsContact.cs" />
+    <Compile Include="clsFAQs.cs" />
+    <Compile Include="clsLink.cs" />
+    <Compile Include="clsNews.cs" />
+    <Compile Include="clsProduct.cs" />
+    <Compile Include="clsProductCategory.cs" />
+    <Compile Include="clsSystem_Log.cs" />
+    <Compile Include="clsUser.cs" />
+    <Compile Include="DBcommon.cs" />
+    <Compile Include="dbstring.cs" />
+    <Compile Include="OptionSysDBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
